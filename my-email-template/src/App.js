@@ -75,63 +75,95 @@ const email = () =>{
        
         
         
-        <Container className="grid grid-cols-4 gap-4 p-20 rounded-lg shadow-lg">
-
+        <Container className="grid grid-cols-3 gap-4 p-20  rounded-lg shadow-lg">
+       <Container className="grid">
 {/* Friend 1 */}
-<Section>
-  <Row>
-<Column align="center" className=" mt-10 w-16 h-16 flex-shrink-0 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
-    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img>
-    <Text className="pl-4">Edward</Text>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
+
+<Column className="">
+<Row align="left" className="my-1 w-16 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
+<Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
+<Column className=" gap-2 flex-row">          
+    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+   <Column className="flex-column">
+   <Row className=""><Text className="pl-4">Edward</Text></Row>
+   <Row className="">
+    <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg>
-    <Text className="text-yellow-500 hover:text-red-600">12</Text>
-    <IonIcon icon={flashOutline} />
-  </Column>
+    </svg></Column>
+    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
+    <Column><IonIcon icon={flashOutline} /></Column>
+    </Row>
+    </Column>
+    </Section>
+    </Row>
+
+
  
 {/* Friend 2 */}
 
-  <Column className="w-16 h-16 flex-shrink-0 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
-    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img>
-    <Text className="pl-4">Edward</Text>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
+<Row align="center" className="my-2 w-10 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
+<Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
+<Column className=" gap-2 flex-row">          
+    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+   <Column className="flex-column">
+   <Row className=""><Text className="pl-4">Edward</Text></Row>
+   <Row className="">
+    <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg>
-    <Text className="text-yellow-500 hover:text-red-600">12</Text>
-    <IonIcon icon={flashOutline} />
-  </Column>
-</Row></Section>
+    </svg></Column>
+    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
+    <Column><IonIcon icon={flashOutline} /></Column>
+    </Row>
+    </Column>
+    </Section>
+    </Row>
 
+</Column>
+
+ <Column>
 {/* Friend 3 */}
-<Section className="mt-8">
-  <Row>
-  <Column className=" mt 10 w-16 h-16 flex-shrink-0 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
-  <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/9073/6623/459b99c854c8d635e1138a18ea7475e7?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X22CiFegR7Wojy3UVyGwhcqNNpxAJH3Bmb1wPibJdV08gsV6EjidlX2b1PN3b-qvufwGQ9kX0P9uHxXTUVCdA7MHwLl4Yq40~sHFS6-A2RsKxD0XrBoUEjLiw3ML-8EOUGJTSKBWfqi1BeYyRWdvRtOYzoPLSwoMxSCrfwdPl5WEdn04UwWIF-y2U02BQ4jLYKKmaE1fKtmh3hok4v7TaDpJ5QPluJAcRTE3y36LoZLz4PJmrvdou581I2TB~N8gaJu-5fL2LF0aoPbT9SSBibAuAKIPxkpd8Db7FTi4Vng5qWYeAsmwVmuri8PrbrNBn-5~ihZxfmF2DEsA0tSHHw__"></Img>
-    <Text className="pl-4">Emily</Text>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
+<Row className=" float-right w-16 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
+<Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
+<Column className=" gap-2 flex-row">          
+    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+   <Column className="flex-column">
+   <Row className=""><Text className="pl-4">Edward</Text></Row>
+   <Row className="">
+    <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg>
-    <Text className="text-yellow-500 hover:text-red-600">12</Text>
-    <IonIcon icon={flashOutline} />
-  </Column>
+    </svg></Column>
+    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
+    <Column><IonIcon icon={flashOutline} /></Column>
+    </Row>
+    </Column>
+    </Section>
+    </Row>
 {/* Friend 4 */}
 
-  <Column className="gap-15 w-16 h-16 flex-shrink-0 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
-    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/e8f1/c3d9/a223f58cb3839877fb390c0d58094e00?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FA32c1O~D3hHSbKmVRrjLvNbZd83Sx-5ZrzSOrOrHh~JGILBLAVQeQJ1V~ZuHw2NGOzf3jMNVUJGy2cw3d6j8RRQHPhtLo3iooV~w~GEU8W57yDMMVP~WdvNTZPVlU~V4MwE2vSd3jiiWhicSOZHyQoietougIitwSStpMJTgZyhq~Oni7R4rFwTkA1jfi0WUs-LcBwtBiM50ytG6fnidauzAp3LGJJxffSbXFKA6TruUjmHGr-CtN2QUjuKOCwVTmm0zYkNBrePafZTydAhXKgLLGwK4JYS6TgWLz~IPwYlIjqz2a-ujy4QmX-P4O2Uizi22vZclw7M7VrvxoSqyQ__"></Img>
-    <Text className="pl-4">Elena</Text>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
+<Row align="center" className="w-16 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
+<Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
+<Column className=" gap-2 flex-row">          
+    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+   <Column className="flex-column">
+   <Row className=""><Text className="pl-4">Edward</Text></Row>
+   <Row className="">
+    <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg>
-    <Text className="text-yellow-500 hover:text-red-600">12</Text>
-    <IonIcon icon={flashOutline} />
-  </Column>
-</Row></Section>
-
-        
-<button href=""className="mt-8 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 border border-gray-400 rounded shadow">
+    </svg></Column>
+    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
+    <Column><IonIcon icon={flashOutline} /></Column>
+    </Row>
+  
+    </Column>
+    </Section>
+    </Row>
+   
+</Column>
+</Container>
+    <Section> 
+<button href=""className="mt-10 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 border border-gray-400 rounded shadow">
   Invite more friends to join
-</button>
+</button></Section>
 </Container>
 
         <Container className="p-8 rounded-lg shadow-lg">
