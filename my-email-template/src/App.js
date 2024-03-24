@@ -17,8 +17,8 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 import { IonIcon } from '@ionic/react';
-import { flashOutline } from 'ionicons/icons';
 import { flash } from 'ionicons/icons';
+import { userplusIcon } from "@heroicons/react/24/solid";
 
 
 // Define the email component
@@ -26,72 +26,92 @@ const email = () =>{
   return(
     <Html>
    
-      <Head></Head>
+      <Head> </Head>
       <Tailwind>
          {/* Blue Guardian Logo */}
-        <Body className="bg-white my-12 mx-auto font-sans">
-        <Img className=" mx-auto w-24" src="https://www.blueguardian.ca/static/media/logo.484c090b87757e4a7a16.png"></Img>
-          <Container className="p-8 rounded-lg shadow-lg">
+        <Body className="bg-zinc-100 my-12 mx-auto font-sans">
+      
+          <Container className="mx-auto">
+      <Row>
+        <Section><Img className="mt-5 bg-white w-12" src="https://www.blueguardian.ca/static/media/logo.484c090b87757e4a7a16.png"></Img></Section>
+    <Section> <Heading className=" boxed-sm text-sm font-bold">BLUE GUARDIAN</Heading></Section>
+      </Row>
+       </Container>
+      
+          <Container className=" mx-auto mt-5 bg-white p-8 boxed-lg shadow-lg">
        
-          <Heading className=" text-xl pt-4">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</Heading>
-          <Heading className=" text-xl pt-4"> Your Weekly Wellness update </Heading>
-          <Text className="text-lg font medium text-grey-70">You certainly have a way with words! Check out the details below.</Text>
+          <Heading className=" text-slate-700 text-center text-lg pt-4">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</Heading>
+          <Heading className=" text-center text-3xl pt-4 text-slate-700"> Your Weekly Wellness update </Heading>
+          <Text className="text-lg font medium text-slate-700">You certainly have a way with words! Check out the details below.</Text>
           <Button></Button>
         </Container>
 
-        <Container className="p-8 rounded-lg shadow-lg">
-          <Heading className=" text-xl pt-4">Blue Guardian Streaks</Heading>
-          <Heading className=" text-xl pt-4">12 Weeks</Heading>
-          <Img className="w-6" src="Lightning Bolt.png"></Img>
-          <svg xmlns="http://www.w3.org/2000/svg" width="103" height="15" viewBox="0 0 103 15" fill="none">
+        <Container className="mt-5 mx-auto bg-white p-8 boxed-lg shadow-lg ">
+          <Row>
+
+       <Section> 
+        <Heading className=" text-lg mt-12">Blue Guardian Streaks</Heading>
+       </Section>
+      <Text className=" mb-15 text-blue-500 text-xl pt-2 font-bold">12 Weeks</Text>       
+          <Column>
+          <Heading className="mb-5 text-black-500 font-bold text-lg">Next Badge</Heading>
+          <Row className="flex flex-col items-center justify-center">
+        
+          <Column className=""><IonIcon className="fill-blue-500 w-6"icon={flash} /></Column>
+   <Column><svg xmlns="http://www.w3.org/2000/svg" width="103" height="15" viewBox="0 0 103 15" fill="none">
   <rect x="0.347168" y="0.295715" width="102.555" height="14.4086" rx="7.20429" fill="#E3E6EC"/>
   <rect x="0.347168" y="0.295715" width="82.2137" height="14.4086" rx="7.20429" fill="#3992EF"/>
-</svg>
+</svg></Column>
+<Column><text className="text-blue-500 font-bold text-lg">Lv.15</text></Column></Row></Column></Row>
+        </Container>
+
+        <Container className="mx-auto mt-5 p-8 bg-white boxed-lg shadow-lg">
+          <Img className=" float-right mx-auto px-8 py-8" src="undraw_well_done_re_3hpo 1.png"></Img>
+          <Heading className=" text-xl pt-4">Tone Detection </Heading>
+          <Text className="text-lg font medium text-slate-700"> Tone Detection helps Blue Guardian understand your feelings so it responds with personalized  support tailored to your emotions.</Text>
+         
+<Link href="#" className="text-lg font medium text-slate-700 underline">Learn more</Link>
 
         </Container>
-        <Container className="p-8 rounded-lg shadow-lg">
-          <Img className=" float-right mx-auto w-24" src="undraw_well_done_re_3hpo 1.png"></Img>
-          <Heading className=" text-xl pt-4">Tone Detection </Heading>
-          <Text className="text-lg font medium text-grey-70"> Tone Detection helps Blue Guardian understand your feelings so it responds with personalized  support tailored to your emotions.</Text>
-          <Button></Button>
-        </Container>
-        <Container className="p-8 rounded-lg shadow-lg">
-          <Img className=" float-right mx-auto w-24" src="undraw_good_team_re_hrvm 2.png"></Img>
+        <Container className="mx-auto p-8 mt-5 bg-white boxed-lg shadow-lg">
+          <Img className=" float-right mx-auto px-8 py-8" src="undraw_good_team_re_hrvm 2.png"></Img>
           <Heading className=" text-xl pt-4">Cognitive Distortions </Heading>
-          <Text className="text-lg font medium text-grey-70">Cognitive distortions are a bias in your brain that tricks you into believing that things are worse than they are. </Text>
-          <Button></Button>
+          <Text className="text-lg font medium text-slate-700">Cognitive distortions are a bias in your brain that tricks you into believing that things are worse than they are. </Text>
+          
+<Link href="#" className="text-lg font medium text-slate-700 underline">Learn more</Link>
+
         </Container>
-        <Container className="p-8 rounded-lg shadow-lg">
-          <Img className=" float-right mx-auto w-24" src="undraw_team_up_re_84ok 1.png"></Img>
+      
+        <Container className="mx-auto p-8 mt-5 bg-white boxed-lg shadow-lg">
+          <Img className=" float-right mx-auto px-8 py-8" src="undraw_team_up_re_84ok 1.png"></Img>
           <Heading className=" text-xl pt-4">Premium Insights </Heading>
-          <Text className="text-lg font medium text-grey-70"> Unlock deeper insights into your mental health journey. Upgrade to Premium to access personalized analytics and more </Text>
-          <Button></Button>
+          <Text className="text-lg font medium text-slate-700"> Unlock deeper insights into your mental health journey. Upgrade to Premium to access personalized analytics and more </Text>
+          <Button href="#" className="text-sm bg-yellow-300 border-radius-4 py-2 px-6 border-gray-400 rounded shadow">Upgrade</Button>
         </Container>
-        <Container className="p-1 rounded-lg shadow-lg bg-sky-400">
+        <Container className="p-1 mt-5 boxed-lg shadow-lg bg-sky-400">
         
           <Heading className=" text-xl pt-4">Your Support Circle(4/5) </Heading>
-          <Text className="text-lg font medium text-grey-70"> Invite a new buddy to make your circle complete </Text>
+          <Text className="text-lg font medium text-slate-700"> Invite a new buddy to make your circle complete </Text>
         </Container>
        
         
         
-        <Container className="grid grid-cols-3 gap-4 p-20  rounded-lg shadow-lg">
-       <Container className="grid">
+        <Container className="mx-auto bg-white grid grid-cols-2 p-12 boxed-lg shadow-lg">
+       <Container className="grid p-0">
 {/* Friend 1 */}
 
-<Column className="">
+<Column className="p-2 ">
 <Row align="left" className="my-1 w-16 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
-<Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
+<Section className="flex-row h-.005 w-60 boxed-lg shadow-lg">
 <Column className=" gap-2 flex-row">          
-    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+    <Img className="h-16 w-16 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
    <Column className="flex-column">
-   <Row className=""><Text className="pl-4">Edward</Text></Row>
+   <Row className=""><Text className="pl-4">Emmanuel</Text></Row>
    <Row className="">
     <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg></Column>
-    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
-    <Column><IonIcon icon={flashOutline} /></Column>
+    </svg>12</Column>
+    <Column><IonIcon className="fill-blue-500 w-4 text-xs "icon={flash} />04</Column>
     </Row>
     </Column>
     </Section>
@@ -101,18 +121,17 @@ const email = () =>{
  
 {/* Friend 2 */}
 
-<Row align="center" className="my-2 w-10 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
+<Row align="center" className="my-1 w-10 h-16 boxed-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
 <Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
 <Column className=" gap-2 flex-row">          
-    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+    <Img className="h-16 w-16 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
    <Column className="flex-column">
    <Row className=""><Text className="pl-4">Edward</Text></Row>
    <Row className="">
     <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg></Column>
-    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
-    <Column><IonIcon icon={flashOutline} /></Column>
+    </svg>12</Column> 
+    <Column><IonIcon className="fill-blue-500 w-6 text-xs"icon={flash} />0.75</Column>
     </Row>
     </Column>
     </Section>
@@ -122,36 +141,37 @@ const email = () =>{
 
  <Column>
 {/* Friend 3 */}
-<Row className=" float-right w-16 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
+<Row className=" float-right w-16 h-16 boxed-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
 <Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
 <Column className=" gap-2 flex-row">          
-    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+    <Img className="h-16 w-16 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
    <Column className="flex-column">
-   <Row className=""><Text className="pl-4">Edward</Text></Row>
+   <Row className=""><Text className="pl-4">Emily</Text></Row>
    <Row className="">
     <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg></Column>
-    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
-    <Column><IonIcon icon={flashOutline} /></Column>
+    </svg>12</Column>
+   
+    <Column><IonIcon className="fill-blue-500 w-6 text-xs"icon={flash} />0.25</Column>
     </Row>
     </Column>
     </Section>
     </Row>
 {/* Friend 4 */}
 
-<Row align="center" className="w-16 h-16 rounded-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
+<Row align="center" className="w-16 h-16 boxed-lg bg-white shadow-md border-solid border-0.773 border-indigo-white boxed" style={{ borderRadius: '9.165px', background: '#FFF', boxShadow: '0px 3.666px 3.666px 0px rgba(0, 0, 0, 0.05)' }}>
 <Section className="flex-row h-.005 w-60 rounded-lg shadow-lg">
 <Column className=" gap-2 flex-row">          
-    <Img className="h-20 w-20 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
+    <Img className="h-16 w-16 rounded-full" src="https://s3-alpha-sig.figma.com/img/b42a/ef7c/2a1b6371738a72de5348abd11b356f1b?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T6kcUZck4j2Khj1PYYkVbnqe24TL90jMq5Tg-ax1wajMLnxR-PZHJU1bgN0LzMQPkqxQOG~QIUvBfUKiTmV0HKhydFGicyYwU-FUNdczmLQPdGEmd52vwwNIXB4HQsDCjss~uod7KJYigl8zVH3aeiRpoaiFw12bRN61t7uIAFheBS9PpCicFmPrDaZuOuhE0KmfZCvbrKi-piyH7xXZ0SNl~kpEiahm3B0sayz4~Q5tcxGqduB6UA7F-wNkKQ-LxCWb~FL-LMeebdfiYfcjZsgd4-cX37rtY1FdZdNHTaW-4g8pw1cNLz-~DBwy4hKkHJD~B859DlT47EXdwwIbFg__"></Img></Column>
    <Column className="flex-column">
-   <Row className=""><Text className="pl-4">Edward</Text></Row>
+   <Row className=""><Text className="pl-4">Elena</Text></Row>
    <Row className="">
     <Column className=""><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14" fill="yellow">
       <path d="M7.38796 0.709412C3.84654 0.709412 0.97876 3.58361 0.97876 7.12503C0.97876 10.6664 3.84654 13.5406 7.38796 13.5406C10.9358 13.5406 13.81 10.6664 13.81 7.12503C13.81 3.58361 10.9358 0.709412 7.38796 0.709412ZM10.1082 10.9744L7.39438 9.33842L4.68057 10.9744L5.39912 7.88849L3.00609 5.81624L6.16258 5.54679L7.39438 2.6341L8.62618 5.54037L11.7827 5.80983L9.38963 7.88207L10.1082 10.9744Z" fill="#FF9500"/>
-    </svg></Column>
-    <Column><Text className="text-yellow-500 hover:text-red-600">12</Text></Column>
-    <Column><IonIcon icon={flashOutline} /></Column>
+    </svg>12</Column>
+    
+    <Column><IonIcon className="fill-blue-500 w-6 text-xs"icon={flash} />25</Column>
+    
     </Row>
   
     </Column>
@@ -160,28 +180,29 @@ const email = () =>{
    
 </Column>
 </Container>
-    <Section> 
-<button href=""className="mt-10 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 border border-gray-400 rounded shadow">
-  Invite more friends to join
-</button></Section>
+    <Section className="flex flex-col items-center justify-center"> 
+ 
+<button  href=" " className="mt-10 bg-white text-bold text-blue-500 py-4 px-20 border-radius-1 border border-indigo-600 "><user-plusIcon className="h-15 w-15" />
+  Invite a friend to join
+  </button></Section>
 </Container>
 
-        <Container className="p-8 rounded-lg shadow-lg">
+        <Container className="mt-5 bg-white p-8 boxed-lg shadow-lg">
           <Img className="mx-auto w-24" src="Group 33191.png"></Img>
           <Heading className=" text-xl pt-4">Can AI be Used as a Therapist?</Heading>
-          <Text className="text-lg font medium text-grey-70">The term AI therapist may sound imposing, prompting
+          <Text className="text-lg font medium text-slate-700">The term AI therapist may sound imposing, prompting
 the question...</Text>
 <Hr class="h-px my-8 bg-gray-200 border-0 bg-gray-700"></Hr>
 <Heading className=" text-xl pt-4">The Power of Customized AI Mental Health Support </Heading>
-<Text className="text-lg font medium text-grey-70">That’s why one solution for everyone doesn’t work well...</Text>
+<Text className="text-lg font medium text-slate-700">That’s why one solution for everyone doesn’t work well...</Text>
 <Hr class="h-px my-8 bg-gray-200 border-0 bg-gray-700"></Hr>
 <Heading className=" text-xl pt-4">Navigating the Crossroads of Teen Mental Health</Heading>
-<Text className="text-lg font medium text-grey-70">n the realm of uncertainty, having the right information is
+<Text className="text-lg font medium text-slate-700">In the realm of uncertainty, having the right information is
 like possessing a superpower.</Text>
 </Container>
 
 
-<Container className="p-8 rounded-lg shadow-lg">
+<Container className="mt-5 bg-white p-8 boxed-lg shadow-lg">
           
                   <Column>
                     <Link href="/">
@@ -265,6 +286,8 @@ Blue Guardian Insights emails, you may change your preferences by clicking the l
   )
 }
 export default email;
+
+
 
 
 const footerLink = {
